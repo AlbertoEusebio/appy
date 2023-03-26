@@ -15,14 +15,23 @@ import {
 import { randomInt } from 'crypto';
 import basicCard from './basicCard';
 import BasicCard from './basicCard';
+import FourGrid from './fourCardGrid';
 
 function InfiniteScroll() {
-  const [items, setItems] = useState<string[]>([]);
+  const [items, setItems] = useState<string[][]>([]);
+
+  let grouped_items;
 
   const generateItems = () => {
     const newItems = [];
     for (let i = 0; i < 50; i++) {
-      newItems.push(`Activity ${1 + items.length + i}`);
+      
+      const newGroup = [];
+
+      for(let j=0; j<4; j++){
+        newGroup.push(`Beautiful activity ${1 + items.length*4 + i*4+ j}`);
+      }
+      newItems.push(newGroup);
     }
     setItems([...items, ...newItems]);
   };
@@ -35,19 +44,13 @@ function InfiniteScroll() {
   return (
     <IonContent>
       <IonList>
-        {items.map((item, index) => (
-          <IonItem key={item}>
-            <BasicCard src={'https://picsum.photos/80/80?random=' + index} index={index}> 
-            <IonChip>
-              <IonAvatar>
-                <img alt="Silhouette of a person's head" src={'https://picsum.photos/100/720?random=' + index} />
-              </IonAvatar>
-              <IonLabel>John Meyer</IonLabel>
-            </IonChip>
-            <IonBadge color="success">{Math.round(Math.random()*20)}</IonBadge>
-            </BasicCard>
+        {items.map((item, index) =>
+          (
+          <IonItem key={item[0]}>
+            <FourGrid index={index} titles={item}></FourGrid>
           </IonItem>
-        ))}
+        )
+        )}
       </IonList>
       <IonInfiniteScroll
         onIonInfinite={(ev) => {

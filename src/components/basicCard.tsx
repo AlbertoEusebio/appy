@@ -4,15 +4,15 @@ import { IonButton } from '@ionic/react';
 
 function BasicCard(props: any) {
   return (
-    <IonCard>
-      <img alt="Silhouette of mountains" src={props.src} />
+    <IonCard color="light">
+      <img alt="Silhouette of mountains" src={props.src} width="100%" height="120px"/>
 
       <div>
         {props.children}
       </div>
 
       <IonCardHeader>
-        <IonCardTitle>Activity {props.index}</IonCardTitle>
+        <IonCardTitle>{props.title}</IonCardTitle>
         <IonCardSubtitle>A nice walk in the bowling mall</IonCardSubtitle>
       </IonCardHeader>
 

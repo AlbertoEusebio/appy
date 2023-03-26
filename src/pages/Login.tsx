@@ -1,26 +1,26 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import InfiniteScroll from '../components/InfiniteScroll';
-import './Home.css';
+import LoginForm from '../components/LoginForm';
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color='success'>
-          <IonTitle>Weekly activity list</IonTitle>
+          <IonTitle>Login Page</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Weekly activity list</IonTitle>
+            <IonTitle size="large">Login Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <InfiniteScroll />
+        <LoginForm />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default Login;

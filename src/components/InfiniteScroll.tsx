@@ -13,9 +13,8 @@ import {
   IonBadge
 } from '@ionic/react';
 import { randomInt } from 'crypto';
-import basicCard from './basicCard';
-import BasicCard from './basicCard';
-import FourGrid from './fourCardGrid';
+import BasicCard from './BasicCard';
+import FourGrid from './FourCardGrid';
 
 function InfiniteScroll() {
   const [items, setItems] = useState<string[][]>([]);

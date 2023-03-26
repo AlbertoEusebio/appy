@@ -1,15 +1,17 @@
 import React from 'react';
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonItem, IonTitle, IonToolbar } from '@ionic/react';
 import { IonButton } from '@ionic/react';
 
 function BasicCard(props: any) {
   return (
     <IonCard color="light">
-      <img alt="Silhouette of mountains" src={props.src} width="100%" height="120px"/>
-
-      <div>
-        {props.children}
-      </div>
+      <IonToolbar color='tertiary'>
+          <IonTitle>A walk in the woods...</IonTitle>
+        </IonToolbar>
+      
+      <IonItem>
+      {props.children}
+      </IonItem>
 
       <IonCardHeader>
         <IonCardTitle>{props.title}</IonCardTitle>

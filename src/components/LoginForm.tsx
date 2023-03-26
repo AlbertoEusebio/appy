@@ -1,7 +1,7 @@
 import React from 'react';
-import { IonButton, IonCard, IonCol, IonGrid, IonIcon, IonInput, IonItem, IonLabel, IonRow, IonTab } from '@ionic/react';
+import { IonButton, IonCard, IonCheckbox, IonCol, IonGrid, IonIcon, IonInput, IonItem, IonLabel, IonRow, IonTab } from '@ionic/react';
 import { IonDatetime, IonDatetimeButton, IonModal } from '@ionic/react';
-import { sendOutline } from 'ionicons/icons';
+import { calendarClearOutline, calendarNumber, calendarOutline, sendOutline } from 'ionicons/icons';
 
 function LoginForm() {
   return (
@@ -39,8 +39,10 @@ function LoginForm() {
     <IonRow>  
         <IonCol>
       <IonItem>
-            <IonDatetimeButton datetime="datetime"> </IonDatetimeButton>
-            
+            <IonLabel>Birthday</IonLabel>
+            <IonIcon color="primary" icon={calendarOutline}></IonIcon>
+            <IonDatetimeButton datetime="datetime"> 
+            </IonDatetimeButton>
             <IonModal keepContentsMounted={true}>
                 <IonDatetime id="datetime"></IonDatetime>
             </IonModal>
@@ -50,6 +52,14 @@ function LoginForm() {
         <IonCol>
         <IonButton href='/home'> Log in </IonButton>
         </IonCol>
+        </IonRow>
+        <IonRow>
+            <IonCol>
+            <IonItem>
+                    <IonCheckbox slot="start"></IonCheckbox>
+                    <IonLabel>I agree to the terms and conditions</IonLabel>
+                </IonItem>
+            </IonCol>
         </IonRow>
     </IonGrid>
     </IonCard>

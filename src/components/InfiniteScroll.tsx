@@ -44,7 +44,7 @@ function InfiniteScroll() {
     <IonContent>
       <IonList>
         {items.map((item, index) =>
-          (
+        (
           <IonItem key={item[0]}>
             <FourGrid index={index} titles={item}></FourGrid>
           </IonItem>
@@ -55,8 +55,8 @@ function InfiniteScroll() {
         onIonInfinite={(ev) => {
           generateItems();
           setTimeout(() => ev.target.complete(), 500);
-        }}
-      >
+        }}>
+        
         <IonInfiniteScrollContent></IonInfiniteScrollContent>
       </IonInfiniteScroll>
     </IonContent>

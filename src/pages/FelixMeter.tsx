@@ -1,5 +1,6 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonRange, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonContent, IonHeader, IonPage, IonRange, IonTitle, IonToolbar } from '@ionic/react';
+import HappyGrid from '../components/HappyGrid';
 
 
 const FelixMeter: React.FC = () => {
@@ -11,6 +12,7 @@ const FelixMeter: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen>
+          <HappyGrid />
         </IonContent>
       </IonPage>
     );

@@ -22,7 +22,7 @@ function BasicCard(props: any) {
         Here's a small text description for the card content. Nothing more, nothing less.
       </IonCardContent>
 
-      <IonButton fill="clear" color="success" onClick={props.remove}> Accept </IonButton>
+      <IonButton fill="clear" color="success" href="/happy" onClick={props.remove}> Accept </IonButton>
       <IonButton fill="clear" color="danger" onClick={props.remove}> Decline </IonButton>
     </IonCard>
   );

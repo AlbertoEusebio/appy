@@ -6,8 +6,9 @@ import { calendarClearOutline, calendarNumber, calendarOutline, sendOutline } fr
 function LoginForm() {
   return (
     <>
-    <IonCard>
-    <IonGrid>
+    <IonItem className="ion-justify-content-center">
+    <IonCard className="ion-padding">
+    <IonGrid className="ion-padding">
     <IonRow>
         <IonCol>
       <IonItem fill="outline">
@@ -15,11 +16,13 @@ function LoginForm() {
         <IonInput placeholder="Enter nane"></IonInput>
       </IonItem>
       </IonCol>
-    <IonCol>
-      <IonItem fill="outline">
-        <IonLabel position="floating">Surname</IonLabel>
-        <IonInput  placeholder="Enter name"></IonInput>
-      </IonItem>
+    </IonRow>
+    <IonRow>
+      <IonCol>
+        <IonItem fill="outline">
+          <IonLabel position="floating">Surname</IonLabel>
+          <IonInput  placeholder="Enter name"></IonInput>
+        </IonItem>
       </IonCol>
     </IonRow>
     <IonRow>  
@@ -29,6 +32,8 @@ function LoginForm() {
         <IonInput placeholder="Enter CA number"></IonInput>
       </IonItem>
      </IonCol>
+     </IonRow>
+     <IonRow>
     <IonCol>
       <IonItem fill="outline">
         <IonLabel position="floating">Email</IonLabel>
@@ -38,24 +43,28 @@ function LoginForm() {
     </IonRow>
     <IonRow>  
         <IonCol>
-      <IonItem>
-            <IonLabel>Birthday</IonLabel>
-            <IonIcon color="primary" icon={calendarOutline}></IonIcon>
-            <IonDatetimeButton datetime="datetime"> 
-            </IonDatetimeButton>
-            <IonModal keepContentsMounted={true}>
-                <IonDatetime id="datetime"></IonDatetime>
-            </IonModal>
-        
-      </IonItem>
-        </IonCol>
-        <IonCol>
-        <IonButton href='/home'> Log in </IonButton>
+          <IonRow>
+            <IonItem>
+                <IonIcon color="primary" icon={calendarOutline}></IonIcon>
+                <IonDatetimeButton datetime="datetime"> 
+                </IonDatetimeButton>
+                <IonModal keepContentsMounted={true}>
+                    <IonDatetime id="datetime"></IonDatetime>
+                </IonModal>
+            </IonItem>
+          </IonRow>
+          <IonRow>
+              <IonCol>
+              <IonItem className="ion-justify-content-center">
+                  <IonButton href='/home' size='large'> Log in </IonButton>
+              </IonItem>
+              </IonCol>
+          </IonRow>
         </IonCol>
         </IonRow>
         <IonRow>
             <IonCol>
-            <IonItem>
+                <IonItem>
                     <IonCheckbox slot="start"></IonCheckbox>
                     <IonLabel>I agree to the terms and conditions</IonLabel>
                 </IonItem>
@@ -63,6 +72,7 @@ function LoginForm() {
         </IonRow>
     </IonGrid>
     </IonCard>
+    </IonItem>
     </>
   );
 }

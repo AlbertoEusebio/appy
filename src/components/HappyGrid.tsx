@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCheckbox, IonCol, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonRow, IonTab, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCheckbox, IonCol, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonRange, IonRow, IonTab, IonTextarea, IonTitle, IonToolbar } from '@ionic/react';
 import { IonDatetime, IonDatetimeButton, IonModal } from '@ionic/react';
 import { calendarClearOutline, calendarNumber, calendarOutline, image, sendOutline } from 'ionicons/icons';
 
@@ -10,7 +10,7 @@ function HappyGrid() {
     <>
     <IonCard>
     <IonToolbar color="tertiary">
-        <IonTitle>Pussy Vibes?</IonTitle>
+        <IonTitle> Che micio sei oggi? </IonTitle>
     </IonToolbar> 
     <IonGrid>
     <IonRow>
@@ -84,6 +84,25 @@ function HappyGrid() {
       <IonTextarea maxlength={200}></IonTextarea>
       </IonItem>
     </IonCardContent>
+    </IonCard>
+    <IonCard>
+      <IonHeader>
+        <IonToolbar color="tertiary">
+          <IonTitle> Tell us how you good you felt </IonTitle>
+        </IonToolbar>
+      </IonHeader>
+      <IonCardContent>
+        <IonRange></IonRange>
+      </IonCardContent>
+    </IonCard>
+    <IonCard>
+      <IonRow>
+        <IonCol>
+          <IonButton href="/home">
+            Send
+          </IonButton>
+        </IonCol>
+      </IonRow>
     </IonCard>
     </>
   );

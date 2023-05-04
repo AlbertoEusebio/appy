@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonAvatar, IonBadge, IonChip, IonCol, IonGrid, IonItem, IonLabel, IonRow } from '@ionic/react';
+import { IonAvatar, IonBadge, IonButton, IonButtons, IonChip, IonCol, IonGrid, IonItem, IonLabel, IonRow } from '@ionic/react';
 import BasicCard from './BasicCard';
 
 
@@ -11,7 +11,7 @@ function FourGrid(props: any) {
         <BasicCard src="https://ionicframework.com/docs/img/demos/card-media.png" title={props.titles[0]}>
             <IonChip>
               <IonAvatar>
-                <img alt="Silhouette of a person's head" src={'https://picsum.photos/100/720?random=' + props.index} />
+                <img alt="Silhouette of a person's head" src={'https://picsum.photos/100/720?random=' + props.index}/>
               </IonAvatar>
               <IonLabel>John Meyer</IonLabel>
             </IonChip>

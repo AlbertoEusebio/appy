@@ -17,7 +17,9 @@ const Login: React.FC = () => {
             <IonTitle size="large">Login Page</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <LoginForm />
+        <IonContent>
+          <LoginForm />
+        </IonContent>
       </IonContent>
     </IonPage>
   );

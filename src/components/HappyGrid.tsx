@@ -4,8 +4,10 @@ import { IonDatetime, IonDatetimeButton, IonModal } from '@ionic/react';
 import { calendarClearOutline, calendarNumber, calendarOutline, image, sendOutline } from 'ionicons/icons';
 
 import "./HappyGrid.css";
+import { useHistory } from 'react-router';
 
 function HappyGrid() {
+  const history = useHistory();
   return (
     <>
     <IonCard>
@@ -98,7 +100,7 @@ function HappyGrid() {
     <IonCard>
       <IonRow>
         <IonCol>
-          <IonButton href="/home">
+          <IonButton onClick={() => history.goBack()}>
             Send
           </IonButton>
         </IonCol>

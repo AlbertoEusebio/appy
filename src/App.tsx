@@ -27,6 +27,8 @@ import './theme/variables.css';
 import FelixMeter from './pages/FelixMeter';
 import ProfilePage from './components/ProfilePage';
 import Profile from './pages/Profile';
+import Quiz from './components/Quiz';
+import QuizPage from './pages/QuizPage';
 
 setupIonicReact();
 
@@ -46,6 +48,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/profile">
             <Profile />
+          </Route>
+          <Route exact path="/quiz">
+            <QuizPage />
           </Route>
           <Route exact path="/">
             <Redirect to="/login" />

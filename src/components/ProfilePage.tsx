@@ -37,27 +37,27 @@ function ProfilePage() {
             </IonHeader>
             <IonCardContent>
                 <IonLabel class="my_lab"> Saggezza </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={6} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={school}></IonIcon>
                 </IonRange>
                 <IonLabel class="my_lab"> Coraggio </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={3} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={ribbon}></IonIcon>
                 </IonRange>
                 <IonLabel class="my_lab"> Umanità </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={8} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={accessibility}></IonIcon>
                 </IonRange>
                 <IonLabel class="my_lab"> Giustizia </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={9} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={shield}></IonIcon>
                 </IonRange>
                 <IonLabel class="my_lab"> Temperanza </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={4} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={rainy}></IonIcon>
                 </IonRange>
                 <IonLabel class="my_lab"> Trascendenza </IonLabel>
-                <IonRange aria-label="Custom range"  min={0} max={10} value={7} pin={true} ticks={true} snaps={true} disabled={true}>
+                <IonRange aria-label="Custom range"  min={0} max={10} value={Math.round(Math.random()*10)} pin={true} ticks={true} snaps={true} disabled={true}>
                 <IonIcon slot="start" icon={earth}></IonIcon>
                 </IonRange>
            </IonCardContent>

@@ -29,6 +29,12 @@ import ProfilePage from './components/ProfilePage';
 import Profile from './pages/Profile';
 import Quiz from './components/Quiz';
 import QuizPage from './pages/QuizPage';
+import QuizPostCard from './pages/QuizPostCard';
+import FrontMenu from './components/FrontMenu';
+import FrontMenuPage from './pages/FrontMenuPage';
+import Gratitude from './pages/GratitudePage';
+import Community from './pages/CommunityInteractionPage';
+import CommunityFeed from './pages/CommunityInteractionPageTwo';
 
 setupIonicReact();
 
@@ -52,8 +58,23 @@ const App: React.FC = () => {
           <Route exact path="/quiz">
             <QuizPage />
           </Route>
+          <Route exact path="/happy_post_card">
+            <QuizPostCard />
+          </Route>
+          <Route exact path="/menu">
+            <FrontMenuPage />
+          </Route>
+          <Route exact path="/gratitude">
+            <Gratitude />
+          </Route>
+          <Route exact path="/community">
+            <Community />
+          </Route>
+          <Route exact path="/community_feed">
+            <CommunityFeed />
+          </Route>
           <Route exact path="/">
-            <Redirect to="/login" />
+            <Redirect to="/menu" />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

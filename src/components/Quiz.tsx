@@ -1,8 +1,10 @@
 import React from 'react';
-import { IonCard, IonContent, IonHeader, IonImg, IonPage, IonRange, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCard, IonContent, IonHeader, IonImg, IonItem, IonPage, IonRange, IonTitle, IonToolbar } from '@ionic/react';
+import { useHistory } from 'react-router';
 
 
 const Quiz: React.FC = () => {
+  const history = useHistory();
     return (
       <IonPage>
         <IonHeader>
@@ -10,11 +12,15 @@ const Quiz: React.FC = () => {
             <IonTitle>Try the quiz</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent fullscreen>
-            <IonImg src='./assets/quiz/appy.png'>
-
+        <IonContent fullscreen className='ion-justify-content-center'>
+            <IonImg src='./assets/quiz/strenghts.png'>
             </IonImg>
-        </IonContent>
+            <IonItem>
+                <IonButton shape="round" color="success" size="large" onClick={() => {
+                  history.push("/happy");
+                }}> Inizia il Quiz </IonButton>
+            </IonItem>
+          </IonContent>
       </IonPage>
     );
   };

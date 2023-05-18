@@ -36,6 +36,7 @@ const Home: React.FC = () => {
         </IonHeader>
         <InfiniteScroll />
       </IonContent>
+      <IonButton expand="block" onClick={() => history.goBack()}> back </IonButton>
     </IonPage>
   );
 };

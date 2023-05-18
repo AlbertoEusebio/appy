@@ -12,12 +12,17 @@ import {
   IonIcon,
   IonBadge,
   IonRefresher,
-  IonRefresherContent
+  IonRefresherContent,
+  IonButton
 } from '@ionic/react';
 import { randomInt } from 'crypto';
 import BasicCard from './BasicCard';
+import { useHistory } from 'react-router';
 
 function InfiniteScroll() {
+
+  const history = useHistory();
+
   const [items, setItems] = useState<String[]>(() => {
     const initItems = [];
     for (let i = 0; i < 5; i++) {

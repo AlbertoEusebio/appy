@@ -4,23 +4,24 @@ import InfiniteScroll from '../components/InfiniteScroll';
 import LoginForm from '../components/LoginForm';
 import ProfilePage from '../components/ProfilePage';
 import Quiz from '../components/Quiz';
+import FrontMenu from '../components/FrontMenu';
 
-const QuizPage: React.FC = () => {
+const FrontMenuPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar color='success'>
-          <IonTitle>Quiz</IonTitle>
+          <IonTitle>Menu</IonTitle>
           <IonButtons slot="start">
             <IonBackButton></IonBackButton>
           </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <Quiz></Quiz>
+        <FrontMenu />
       </IonContent>
     </IonPage>
   );
 };
 
-export default QuizPage;
+export default FrontMenuPage;

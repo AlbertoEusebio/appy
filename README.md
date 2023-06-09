@@ -6,3 +6,6 @@ The app aims at fight solitude and monotony by providing a way to socialize and 
 ## Why ❓
 The project starts from the 80-years old research on Happiness carried out by Harvard University,
 which proved that the key to an happy and long life are healthy and long-lasting relationships.
+
+## What was implemented ❓
+At the moment being, the only part implemented in the app is the user interface.

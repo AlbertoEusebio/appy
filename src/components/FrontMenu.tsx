@@ -9,7 +9,7 @@ const FrontMenu: React.FC = () => {
       <IonPage>
         <IonHeader>
           <IonToolbar color='success'>
-            <IonTitle>Try the quiz</IonTitle>
+            <IonTitle>the main menu</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent fullscreen className='ion-justify-content-center'>

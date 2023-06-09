@@ -2,8 +2,12 @@ import React from 'react';
 import { IonButton, IonCard, IonCheckbox, IonCol, IonContent, IonGrid, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonRow, IonTab } from '@ionic/react';
 import { IonDatetime, IonDatetimeButton, IonModal } from '@ionic/react';
 import { calendarClearOutline, calendarNumber, calendarOutline, logoFacebook, logoInstagram, logoTwitch, logoTwitter, sendOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router';
 
 function LoginForm() {
+
+  const history = useHistory();
+
   return (
     <>
   <IonImg src='./assets/quiz/app_y.png'>
@@ -28,7 +32,7 @@ function LoginForm() {
           </IonRow>
             <IonRow>
                 <IonCol>
-                    <IonButton href='/home' size='large' expand="block" shape="round"> Log in </IonButton>
+                    <IonButton href='/menu' size='large' expand="block" shape="round"> Log in </IonButton>
                 </IonCol>
             </IonRow>
             <IonRow className='ion-padding'>

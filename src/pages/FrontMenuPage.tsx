@@ -8,19 +8,7 @@ import FrontMenu from '../components/FrontMenu';
 
 const FrontMenuPage: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar color='success'>
-          <IonTitle>Menu</IonTitle>
-          <IonButtons slot="start">
-            <IonBackButton></IonBackButton>
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent fullscreen>
-        <FrontMenu />
-      </IonContent>
-    </IonPage>
+    <FrontMenu />
   );
 };
 

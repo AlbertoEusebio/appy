@@ -61,9 +61,6 @@ const App: React.FC = () => {
           <Route exact path="/happy_post_card">
             <QuizPostCard />
           </Route>
-          <Route exact path="/menu">
-            <FrontMenuPage />
-          </Route>
           <Route exact path="/gratitude">
             <Gratitude />
           </Route>
@@ -73,8 +70,11 @@ const App: React.FC = () => {
           <Route exact path="/community_feed">
             <CommunityFeed />
           </Route>
+          <Route exact path="/menu">
+            <FrontMenuPage />
+          </Route>
           <Route exact path="/">
-            <Redirect to="/menu" />
+            <Login />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

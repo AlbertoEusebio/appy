@@ -100,7 +100,7 @@ function HappyGrid() {
     <IonCard>
       <IonRow>
         <IonCol>
-          <IonButton onClick={() => history.push("/home")}>
+          <IonButton href='/home'>
             Send
           </IonButton>
         </IonCol>
